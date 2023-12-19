@@ -1,0 +1,11 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/564x/52/c0/7b/52c07b239601f6e802c201f4ce4d79c0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}

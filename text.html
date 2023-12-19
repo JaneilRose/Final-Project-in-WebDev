@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="text.css">
+    <script src="text.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Student Profile</h1>
+    </header>
+    <div class="container">
+        
+            <h3>Quick Grader</h3>
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID"><br><br>
+        
+            <p>Name: <span id="NAME"></span></p>
+            <p>Age: <span id="AGE"></span></p>
+            <p>Sex: <span id="SEX"></span></p>
+            <p>Course, Year, & Section: <span id="COURSE"></span></p>
+            
+
+            <button type="button" onclick="scan()">Search</button><br><br>
+            <hr>
+            
+            <label for="prelim">Prelim Grade:</label>             
+            <input type="text" id="prelim">
+            <p class="name">- <span id="PRELIM"></span></p>
+
+            <label for="mid">Midterm Grade:</label>
+            <input type="text" id="mid">
+            <p class="name">- <span id="MID"></span></p>
+
+            <label for="semi">Semifinal Grade:</label>
+            <input type="text" id="semi">
+            <p class="name">- <span id="SEMI"></span></p>
+
+            <label for="final">Final Grade:</label>
+            <input type="text" id="final">
+            <p class="name">- <span id="FINAL"></span></p>
+    
+
+            <button type="button" onclick="passed()">Remarks</button><br><br>
+            <hr>
+
+            <label for="total">SUMMARY</label>
+            <output type="text" id="total1">
+            <p>Name: <span id="NAME2"></span></p>
+            <p>Course, Year, & Section: <span id="COURSE2"></span></p>
+            <p>First Semester Grade: <span id="totalgrade"></span></p>
+
+            <button type="button" onclick="total()">Summary</button>
+
+        <div id="result"></div>
+    </div>
+
+
+    <script src="text.js"></script>
+</body>
+</html>

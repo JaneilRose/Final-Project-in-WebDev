@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Loop Example</title>
+</head>
+<body>
+    <h1>Array Loop Example</h1>
+    <table id="output-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <script>
+        // Sample array with objects representing items
+        const items = [
+            { id: 1, name: "Item 1" },
+            { id: 2, name: "Item 2" },
+            { id: 3, name: "Item 3" },
+            { id: 4, name: "Item 4" },
+            { id: 5, name: "Item 5" },
+        ];
+
+        // Get the table body where we'll display the data
+        const tableBody = document.getElementById("table-body");
+
+        // Loop through the array and create table rows for each item
+        items.forEach((item) => {
+            const row = document.createElement("tr");
+            const idCell = document.createElement("td");
+            const nameCell = document.createElement("td");
+
+            idCell.textContent = item.id;
+            nameCell.textContent = item.name;
+
+            row.appendChild(idCell);
+            row.appendChild(nameCell);
+            tableBody.appendChild(row);
+        });
+    </script>
+</body>
+</html>
